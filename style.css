@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: #FBF8F1;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+a:hover {
+    color: black;
+}
+
+button {
+    background: #a9f999;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER ========================================= */
+header {
+    padding: 25px;
+    text-align: center;
+}
+
+header > article {
+    /* display: inline-block; */
+    justify-content: space-around;
+}
+
+header > article > nav > a {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header > article > a > button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.main-name button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* FIRST-APPEAR CONTENT ========================================= */
+.first-view {
+    background: #fd746c;
+    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+    background: linear-gradient(to right, #ff9068, #fd746c);
+    box-shadow: 0px 0px 8px 4px #F999B7;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+span {
+    color: black;
+}
+
+#first-appear {
+    padding: 0px 10px;
+}
+
+#first-appear > article > a > button {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#first-appear > img {
+    margin: 25px;
+    height: 360px;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    border-radius: 30px;
+}
+
+
+/* PROGRAMS CONTENT ========================================= */
+#program {
+    margin: 20px;
+}
+
+#program > h1 {
+    color: #fd746c;
+}
+
+#program > article.card {
+    box-shadow: 0px 0px 12px 6px rgba(216, 216, 216, 0.2);
+    /* border-radius: 30px; */
+    /* padding: 20px; */
+    margin-top: 10px;
+    background-color: #fd746c;
+}
+
+/* SERVICE CONTENT ========================================= */
+#service {
+    margin: 20px;
+}
+#service > article > h1 {
+    color: #fd746c;
+}
+
+#service > article > p{
+    color: #F999B7;
+    font-weight: bold;
+}
+
+/* FLEX ========================================= */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/* BOX COLOR ========================================= */
+.box-x {
+    padding: 30px;
+    background-color: #f999e9;
+}
+
+.box-y {
+    padding: 30px;
+    background-color: #6c76fd;
+}
+
+.box-x > div > img, .box-y > div > img {
+    width: 75px;
+}
+
+.box-xx {
+    padding: 30px;
+    background-color: #a9f999;
+    border-radius: 30px;
+}
+
+.box-yy {
+    padding: 30px;
+    background-color: #6c76fd;
+    border-radius: 30px;
+}
+
+.lim-box {
+    margin: 10px;
+}
+
+/* PRODUCT CONTENT ========================================= */
+#product {
+    margin: 20px;
+    justify-content: space-between;
+}
+
+
+/* FLOAT LEFT CONTENT ========================================= */
+.left-product {
+    float: left;
+    width: 67%;
+    color: black;
+}
+
+.left-product > article {
+    padding: 20px;
+}
+
+.left-product > article.item-card {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px 0;
+    overflow-x: scroll;
+    overflow-y: none;
+}
+
+.card-item {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: white;
+}
+
+.card-item.flex-column > img {
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.card-item > h3 {
+    color: black;
+}
+
+.card-item > button {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+}
+
+.card-item > button:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+/* FLOAT RIGHT CONTENT ========================================= */
+aside {
+    margin-left: 20px;
+    float: right;
+    width: 30%;
+    color: black;
+}
+
+aside > article {
+    padding: 20px 0;
+}
+
+.card-ku {
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 6px #FBF8F1;
+    background-color: #6c76fd;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+}
+
+.profile >  h3 {
+    margin-top: 20px;
+}
+
+#button-menu {
+    width: auto;
+    padding: 20px 0;
+    height: 320px;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+div#button-menu > button {
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #F999B7;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+}
+
+div#button-menu > button:hover {
+    background-color: #a9f999;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+}
+
+footer {
+    height: 75px;
+    background-color: #000;
+    border-top: 4px solid #fd746c;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE ========================================= */
+@media screen and (max-width: 1080px) {
+    #product.flex-row {
+        flex-direction: column;
+    }
+
+    .left-product,
+    aside {
+        width: auto;
+        padding: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header a {
+        font-size: 14px;
+    }
+
+    header button {
+        padding: 0;
+        border-radius: 1px;
+    }
+
+    #program .flex-row {
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 504px) {
+    header a {
+        font-size: 12px;
+    }
+
+    header button {
+        padding: 0;
+        border-radius: 1px;
+    }
+
+    #first-appear > img {
+        height: 240px;
+    }
+
+    #program .flex-row {
+        flex-direction: column;
+    }
+}
